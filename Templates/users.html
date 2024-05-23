@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Users</title>
+</head>
+
+<body>
+    <h1>All Users and MAC Addresses</h1>
+    <ul>
+        {% for user in users %}
+        <li>{{ user[0] }} | {{ user[1] }} | {{ user[2] }} | {{ user[3] }} | {{ user[4] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back</a>
+</body>
+
+</html>
